@@ -1,12 +1,20 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import logo from "./assets/Background.svg";
+import contain from "./assets/Container.png";
+import svg from "./assets/SVG.svg";
+import svg1 from "./assets/SVG (1).svg";
+import contaier from "./assets/Container.svg";
+import man from "./assets/man.png";
+import svg2 from "./assets/SVG (2).svg";
+import Group from "./assets/Group.svg";
 
 createRoot(document.getElementById("root")).render(
   <>
     <header className="bg-[#F8F9FACC]">
       <div className="container max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <div className="logo flex items-center gap-1">
-          <img src="/public/Background.svg" alt="logo" className="h-10 w-10" />
+          <img src={logo} className="h-10 w-10" />
           <h1 className=" pb-3 font-['Poppins'] font-bold text-[20px] tracking-normal text-[#222222]">
             Gourmet Bistro
           </h1>
@@ -24,7 +32,7 @@ createRoot(document.getElementById("root")).render(
     </header>
     <section className="relative flex min-h-[921.59px] items-center font-['Poppins']">
       <img
-        src="/public/Container.png"
+        src={contain}
         alt="hero"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
@@ -46,17 +54,17 @@ createRoot(document.getElementById("root")).render(
 
         <div className="flex gap-4">
           <button className="flex items-center gap-2 rounded-xl bg-[#FF6B35] px-8 py-4 font-semibold">
-            <img src="/public/SVG.svg" alt="" className="h-5 w-5" />
+            <img src={svg} className="h-5 w-5" />
             View Menu
           </button>
           <button className="flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-8 py-4 font-semibold backdrop-blur-md">
-            <img src="/public/SVG (1).svg" alt="" className="h-5 w-5" />
+            <img src={svg1} className="h-5 w-5" />
             Book a Table
           </button>
         </div>
 
         <div className="flex items-center gap-4">
-          <img src="/public/Container.svg" alt="" className="h-10" />
+          <img src={contaier} className="h-10" />
           <p className="text-base text-[#E5E7EB]">
             <b className="text-white">4.9-5</b> from over 2,000+ happy diners
           </p>
@@ -69,7 +77,7 @@ createRoot(document.getElementById("root")).render(
           <div className="absolute -left-4 -top-4 size-24 rounded-2xl bg-[#FF6B35]/10"></div>
 
           <img
-            src="/public/man.png"
+            src={man}
             alt="man"
             className="relative aspect-4/5 w-full rounded-3xl object-cover shadow-2xl"
           />
@@ -104,7 +112,7 @@ createRoot(document.getElementById("root")).render(
           <div className="grid grid-cols-2 gap-6">
             <div className="flex gap-3">
               <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-[#FF6B35]/10">
-                <img src="/public/SVG (2).svg" alt="" className="size-5" />
+                <img src={svg2} className="size-5" />
               </div>
               <div>
                 <h4 className="font-['Poppins'] text-[#222222]">Fresh Harvest</h4>
@@ -116,7 +124,7 @@ createRoot(document.getElementById("root")).render(
 
             <div className="flex gap-3">
               <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-[#FF6B35]/10">
-                <img src="/public/Group.svg" alt="" className="size-5" />
+                <img src={Group} className="size-5" />
               </div>
               <div>
                 <h4 className="font-['Poppins'] text-[#222222]">Expert Chefs</h4>
